@@ -16,7 +16,7 @@ public class RandomSorting {
     public static void main(String[] args) {
         int[] arr={12,34,53,23,24,45};
        
-        System.out.println(Arrays.toString(Sorting(arr)));
+        System.out.println(Arrays.toString("sorted",Sorting(arr)));
         
     }
 }
