@@ -16,6 +16,6 @@ public class leetcode_74 {
     }
     public static void main(String[] args) {
         char[] ch={'c','f','j'};
-        answer(ch, 'g');
+        answer(ch, 'f');
     }
 }
