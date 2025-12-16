@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Cycle {
     public static void main(String[] args) {
-        int[] arr={3,4,2,5,1};
+        int[] arr={3,3,3,3,3};
         int i=0;
         while(i<arr.length){
             int correctIdx=arr[i]-1;
@@ -14,6 +14,13 @@ public class Cycle {
                 i++;
             }
         }
-        System.out.println(Arrays.toString(arr));
+        for(int j=0;j<arr.length;j++){
+            if(j+1!=arr[j]){
+               if (arr[j]==arr[arr[j]-1]) {
+                System.out.println(arr[j]);
+               }
+            }
+        }
+        
     }
 }
