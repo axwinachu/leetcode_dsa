@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class BubbleSorting {
     public static int[] sorting(int[] arr){
@@ -21,6 +23,15 @@ public class BubbleSorting {
     public static void main(String[] args) {
         int[] arr={10,34,5436,78,9,856,3254};
         System.out.println(Arrays.toString(sorting(arr)));
+        List<Integer> li=new CopyOnWriteArrayList<>();
+        li.add(10);
+        li.add(11);
+        li.add(12);
+        li.add(13);
+        li.add(14);
+        li.add(15);
+        li.parallelStream().forEach(System.out::println);
+        li.stream().forEach(System.out::println);
         
     }
     

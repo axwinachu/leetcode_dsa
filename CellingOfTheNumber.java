@@ -1,6 +1,6 @@
 public class CellingOfTheNumber {
     public static void main(String[] args) {
-        int[] arr={1,3,4,5,67,78,90,100};
+        int[] arr={1,3,4,5,6,6,6,67,67,67,78,90,100};
         int target=15;
         int start=0;
         int end=arr.length-1;
@@ -14,6 +14,7 @@ public class CellingOfTheNumber {
                 end=mid-1;
             }
         }
-        System.out.println(arr[start]);
+        System.out.println(start);
+        System.out.println(end);
     }
 }
