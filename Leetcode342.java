@@ -18,7 +18,7 @@ class Solution {
 }
 public class Leetcode342 {
     public static void main(String[] args) {
-        int[] nums1 = {1,2,2,1}, nums2 = {2,2};
+        int[] nums1 = {1,2,1}, nums2 = {2,2};
         Solution sc=new Solution();
         System.out.println(Arrays.toString(sc.intersect(nums1, nums2)));
     }
